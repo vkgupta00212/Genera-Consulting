@@ -13,7 +13,7 @@ import labInactiveMobile from "../../../assets/lab-inactive-mobile.svg";
 import consultingInactiveMobile from "../../../assets/consulting-inactive-mobile.svg";
 import GroupLogo from "../../../assets/Group.svg";
 import GroupBlackLogo from "../../../assets/GroupBlack.svg";
-import ArrowRight from "../../../assets/arr.svg";
+import ArrowRight from "../../../assets/Arr.svg";
 import { BsArrowRight } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 export default function ExpandablePanels() {
@@ -44,8 +44,8 @@ export default function ExpandablePanels() {
       activePanel === null
         ? "flex-1"
         : activePanel === panelId
-          ? "flex-[10]"
-          : "flex-[1]";
+        ? "flex-[10]"
+        : "flex-[1]";
     return `${base} ${flexClass}`;
   };
 
@@ -53,33 +53,31 @@ export default function ExpandablePanels() {
     navigate(url);
   };
 
-
-
   // Determine background images based on active panel and device size.
   const getBackgroundImage = (panelId) => {
     const activeImages = isMobile
       ? {
-        digital: `url(${digitalActive})`,
-        lab: `url(${labActiveMobile})`,
-        consulting: `url(${consultingActiveMobile})`,
-      }
+          digital: `url(${digitalActive})`,
+          lab: `url(${labActiveMobile})`,
+          consulting: `url(${consultingActiveMobile})`,
+        }
       : {
-        digital: `url(${digitalActive})`,
-        lab: `url(${labActive})`,
-        consulting: `url(${consultingActive})`,
-      };
+          digital: `url(${digitalActive})`,
+          lab: `url(${labActive})`,
+          consulting: `url(${consultingActive})`,
+        };
 
     const inactiveImages = isMobile
       ? {
-        digital: `url(${digitalInactive})`,
-        lab: `url(${labInactiveMobile})`,
-        consulting: `url(${consultingInactiveMobile})`,
-      }
+          digital: `url(${digitalInactive})`,
+          lab: `url(${labInactiveMobile})`,
+          consulting: `url(${consultingInactiveMobile})`,
+        }
       : {
-        digital: `url(${digitalInactive})`,
-        lab: `url(${labInactive})`,
-        consulting: `url(${consultingInactive})`,
-      };
+          digital: `url(${digitalInactive})`,
+          lab: `url(${labInactive})`,
+          consulting: `url(${consultingInactive})`,
+        };
 
     if (activePanel === null) {
       return activeImages[panelId] || "";
@@ -92,13 +90,16 @@ export default function ExpandablePanels() {
 
   // Arrow rotation logic for the active panel.
   const getArrowClasses = (panelId) => {
-    return `absolute top-2 md:top-4  right-4 w-10 h-10 transition-transform duration-300 ${activePanel === panelId ? "rotate-180" : ""
-      }`;
+    return `absolute top-2 md:top-4  right-4 w-10 h-10 transition-transform duration-300 ${
+      activePanel === panelId ? "rotate-180" : ""
+    }`;
   };
 
   return (
     <div
-      className={`w-full h-screen flex ${isMobile ? "flex-col" : "flex-row"} gap-4 p-4 overflow-hidden`}
+      className={`w-full h-screen flex ${
+        isMobile ? "flex-col" : "flex-row"
+      } gap-4 p-4 overflow-hidden`}
     >
       {/* DIGITAL Panel */}
       <div
@@ -111,7 +112,11 @@ export default function ExpandablePanels() {
         </div>
 
         {activePanel === "digital" && (
-          <div className={`relative flex ${isMobile ? "flex-col" : "flex-row"} w-full h-full px-12 py-8 text-white`}>
+          <div
+            className={`relative flex ${
+              isMobile ? "flex-col" : "flex-row"
+            } w-full h-full px-12 py-8 text-white`}
+          >
             <div className={getArrowClasses("digital")}>
               <img src={ArrowUpWhite} alt="Arrow Up White" />
             </div>
@@ -122,29 +127,34 @@ export default function ExpandablePanels() {
                   alt="GeneraDigital Logo"
                   className="h-16 w-auto md:h-[124px]"
                 />
-                <h2 className="text-4xl md:text-6xl font-light "><strong className="font-medium">Genera</strong>Digital</h2>
+                <h2 className="text-4xl md:text-6xl font-light ">
+                  <strong className="font-medium">Genera</strong>Digital
+                </h2>
               </div>
               <div className="flex-1 flex flex-col items-end justify-center ">
                 <div className="max-w-md mx-auto mt-0">
                   <p className="mb-6 leading-[100%] text-[15px] md:text-[20px] text-left">
-                    Desde la gestión de ayudas como el Kit Digital hasta servicios
-                    de marketing y automatización, te acompañamos a liderar el
-                    cambio en tu sector.¡Descubre cómo podemos revolucionar juntos tu negocio!
-
+                    Desde la gestión de ayudas como el Kit Digital hasta
+                    servicios de marketing y automatización, te acompañamos a
+                    liderar el cambio en tu sector.¡Descubre cómo podemos
+                    revolucionar juntos tu negocio!
                   </p>
-                  <button onClick={() => handleButtonClick('/digital')} className="btn-swipe  w-72 contact-btn right-swipe md:w-fit h-16 md:pr-6 cursor-pointer relative overflow-hidden flex justify-center items-center gap-3 bg-transparent text-white 
+                  <button
+                    onClick={() => handleButtonClick("/digital")}
+                    className="btn-swipe  w-72 contact-btn right-swipe md:w-fit h-16 md:pr-6 cursor-pointer relative overflow-hidden flex justify-center items-center gap-3 bg-transparent text-white 
                                  md:pl-15 py-3 px-1 pl-1
                                  rounded-full text-sm font-bold transition-all duration-500 ease-in-out hover:bg-white border-1
-                                 border-white hover:text-black hover:lg:pl-4 ">
+                                 border-white hover:text-black hover:lg:pl-4 "
+                  >
                     <span className="absolute left-4 arrow-icon">
                       <BsArrowRight
                         className="relative transition-transform duration-500 ease-in-out group-hover:translate-x-1
                                                           w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 pr-1"
                       />
-
                     </span>
-                    <span className="md:text-xl pl-8 text-[0.9em] px-7 capitalize">Comienza tu transformación</span>
-
+                    <span className="md:text-xl pl-8 text-[0.9em] px-7 capitalize">
+                      Comienza tu transformación
+                    </span>
                   </button>
                 </div>
               </div>
@@ -170,36 +180,45 @@ export default function ExpandablePanels() {
         </div>
 
         {activePanel === "lab" && (
-          <div className={`relative flex ${isMobile ? "flex-col pt-[65px]" : "flex-row"} w-full h-full px-6 py-4 `}>
+          <div
+            className={`relative flex ${
+              isMobile ? "flex-col pt-[65px]" : "flex-row"
+            } w-full h-full px-6 py-4 `}
+          >
             <div className="mb-4 flex items-center gap-4">
               <img
                 src={GroupBlackLogo}
                 alt="GeneraDigital Logo"
                 className="h-16 w-16"
               />
-              <h2 className="text-4xl md:text-6xl font-light "><strong className="font-medium">Genera</strong>Lab</h2>
+              <h2 className="text-4xl md:text-6xl font-light ">
+                <strong className="font-medium">Genera</strong>Lab
+              </h2>
             </div>
             <div className="flex-1 flex flex-col items-end justify-center">
               <div className="max-w-md mx-auto mt-0">
                 <p className="mb-6 leading-[100%] text-[15px] md:text-[20px] text-left">
                   Desde la gestión de ayudas como el Kit Digital hasta servicios
                   de marketing y automatización, te acompañamos a liderar el
-                  cambio en tu sector.¡Descubre cómo podemos revolucionar juntos tu negocio!
-
+                  cambio en tu sector.¡Descubre cómo podemos revolucionar juntos
+                  tu negocio!
                 </p>
-                <button onClick={() => handleButtonClick('/lab')} className="btn-swipe  w-72 contact-btn right-swipe md:w-fit h-16 md:pr-6 cursor-pointer relative overflow-hidden flex justify-center items-center gap-3 bg-black text-white 
+                <button
+                  onClick={() => handleButtonClick("/lab")}
+                  className="btn-swipe  w-72 contact-btn right-swipe md:w-fit h-16 md:pr-6 cursor-pointer relative overflow-hidden flex justify-center items-center gap-3 bg-black text-white 
                                  md:pl-15 py-3 px-1 pl-1
                                  rounded-full text-sm font-bold transition-all duration-500 ease-in-out hover:bg-white border-1
-                                 border-white hover:text-black hover:lg:pl-4 ">
+                                 border-white hover:text-black hover:lg:pl-4 "
+                >
                   <span className="absolute left-4 arrow-icon">
                     <BsArrowRight
                       className="relative transition-transform duration-500 ease-in-out group-hover:translate-x-1
                                                           w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 pr-1"
                     />
-
                   </span>
-                  <span className="md:text-xl pl-8 text-[0.9em] px-7 capitalize">Comienza tu transformación</span>
-
+                  <span className="md:text-xl pl-8 text-[0.9em] px-7 capitalize">
+                    Comienza tu transformación
+                  </span>
                 </button>
               </div>
             </div>
@@ -224,35 +243,45 @@ export default function ExpandablePanels() {
         </div>
 
         {activePanel === "consulting" && (
-          <div className={`relative flex ${isMobile ? "flex-col pt-[65px]" : "flex-row"} w-full h-full px-6 py-4 text-white`}>
+          <div
+            className={`relative flex ${
+              isMobile ? "flex-col pt-[65px]" : "flex-row"
+            } w-full h-full px-6 py-4 text-white`}
+          >
             <div className="mb-4 flex items-center gap-4 ">
               <img
                 src={GroupLogo}
                 alt="GeneraDigital Logo"
                 className="h-20 w-20 xl:mb-10 "
               />
-              <h2 className="text-[27px] md:text-6xl font-light xl:mb-10"><strong className="font-bold">Genera</strong>Consulting</h2>
+              <h2 className="text-[27px] md:text-6xl font-light xl:mb-10">
+                <strong className="font-bold">Genera</strong>Consulting
+              </h2>
             </div>
             <div className="flex-1 flex flex-col items-end justify-center">
               <div className="max-w-md mx-auto mt-0">
                 <p className="mb-6 leading-[100%] text-[15px] md:text-[20px] text-left">
                   Desde la gestión de ayudas como el Kit Digital hasta servicios
                   de marketing y automatización, te acompañamos a liderar el
-                  cambio en tu sector.¡Descubre cómo podemos revolucionar juntos tu negocio!
+                  cambio en tu sector.¡Descubre cómo podemos revolucionar juntos
+                  tu negocio!
                 </p>
-                <button onClick={() => handleButtonClick('/consulting')} className="btn-swipe  w-72 contact-btn right-swipe md:w-fit h-16 md:pr-6 cursor-pointer relative overflow-hidden flex justify-center items-center gap-3 bg-black text-white 
+                <button
+                  onClick={() => handleButtonClick("/consulting")}
+                  className="btn-swipe  w-72 contact-btn right-swipe md:w-fit h-16 md:pr-6 cursor-pointer relative overflow-hidden flex justify-center items-center gap-3 bg-black text-white 
                                  md:pl-15 py-3 px-1 pl-1
                                  rounded-full text-sm font-bold transition-all duration-500 ease-in-out hover:bg-white border-1
-                                 border-white hover:text-black hover:lg:pl-4 ">
+                                 border-white hover:text-black hover:lg:pl-4 "
+                >
                   <span className="absolute left-4 arrow-icon">
                     <BsArrowRight
                       className="relative transition-transform duration-500 ease-in-out group-hover:translate-x-1
                                                           w-5 h-5 sm:w-8 sm:h-8 md:w-10 md:h-10 pr-1"
                     />
-
                   </span>
-                  <span className="md:text-xl pl-8 text-[0.9em] px-7 capitalize">Comienza tu transformación</span>
-
+                  <span className="md:text-xl pl-8 text-[0.9em] px-7 capitalize">
+                    Comienza tu transformación
+                  </span>
                 </button>
               </div>
             </div>
