@@ -1,0 +1,284 @@
+.carousel {
+    margin-left: auto;
+    padding: 10px 0;
+    /* Reduce the padding to make the container smaller */
+    max-width: 100%;
+    /* Set the max-width to a smaller size */
+    height: 300px;
+    /* Set a fixed height for the carousel */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    /* Stack the groups vertically */
+    >* {
+      flex: 0 0 100%;
+    }
+  
+    &:hover .group {
+      animation-play-state: paused;
+    }
+  }
+  .work-with-card-one-fourth-bg{
+    background: url("../src/assets/bg_one.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+  }
+
+  .work-with-card-one-first-bg{
+    background: url("../../../assets/service_card_two.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+  }
+  .work-with-card-one-second-bg{
+    background: url("../../../assets/service_img_three.jpeg");
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+  }
+  .work-with-card-one-third-bg{
+    background: url("../../../assets/landing_page_four_service_card_bg.svg");
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
+  }
+  .card {
+    position: sticky;
+    top: -230%;
+    min-height: 250px;
+    width: 80%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    height: 400px;
+    width: 600px;
+    color: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+    font-size: large;
+    position: relative;
+    min-height: 500px;
+    border: 1px solid #fff;
+  }
+  
+  .card-number {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 96px;
+    font-weight: bold;
+  }
+  
+  .card-title {
+    font-size: 48px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 90px;
+  }
+  
+  .card-text {
+    font-size: 20px ;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 12px;
+    margin-bottom: 10px;
+  }
+  .card:nth-child(1) {
+    background: url("../src/assets/bg_one.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card:nth-child(2) {
+    border: 1px solid #fff;
+    background: #090909;
+  }
+  
+  .card:nth-child(3) {
+    background: url("../src/assets/bg_one.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateY(0);
+      /* Start at the top */
+    }
+  
+    100% {
+      transform: translateY(-100%);
+      /* Move upwards by the full height */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      position: sticky;
+      top: 0;
+      min-height: 150px;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      min-height: 400px;
+      min-width: 350px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+    .card-number {
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      font-size: 46px;
+      font-weight: bold;
+    }
+    
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      position: absolute;
+      bottom: 90px;
+      text-align: left;
+    }
+    
+    .card-text {
+      font-size: 15px ;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+      position: absolute;
+      bottom: 12px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .service-container {
+      height: 270vh ;
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+   
+
+    .card {
+      position: sticky;
+      top: 0;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      height: 270px;
+      width: 300px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+    
+  }
+
+
+  
+  @media only screen and (max-width: 390px){
+    .service-container {
+      height: 270vh !important;
+    }
+  }
+  
+
+    
+  @media only screen and (max-width: 760px) {
+    /* .service-container {
+      height: 330vh;
+    } */
+
+    .card {
+      position: sticky;
+      top: 0;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      height: 370px;
+      width: 300px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+    
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .service-container {
+      height: 340vh;
+    }
+    
+  }
+
+ 
+  
+
+
+  
+  @media only screen and (max-width: 1112px) and (min-width: 761px) {
+    .service-container {
+      height: 300vh;
+    }
+
+    .card {
+      position: sticky;
+      top: -30rem;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      min-height: 370px;
+      min-width: 380px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 600;
+      position: absolute;
+      bottom: 90px;
+      text-align: left;
+    }
+    
+    .card-text {
+      font-size: 15px ;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+      position: absolute;
+      bottom: 12px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    
+  }

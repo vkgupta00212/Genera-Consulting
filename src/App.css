@@ -1,0 +1,1057 @@
+@import "tailwindcss";
+
+/* In your global CSS file */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+input{
+  outline: none !important;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* for Internet Explorer */
+  scrollbar-width: none;
+  /* for Firefox */
+}
+
+.gradient-green {
+  background: linear-gradient(90deg, #00FFA3 0%, #00FFA3 100%);
+}
+
+
+.hero-section {
+  background-image: url("../src/assets/bg_one.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section-two {
+  background-image: url("../src/assets/hero_bg_two.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 5.3rem;
+  height: 800px;
+}
+
+
+.hero-section-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust darkness */
+  border-bottom-right-radius: 1.9rem;
+  border-bottom-left-radius: 1.9rem;
+  z-index: 1;
+  border-radius: 2em;
+}
+
+.hero-section-two>* {
+  position: relative;
+  z-index: 2;
+  /* Ensures content appears above the overlay */
+}
+
+
+.hero-section-three {
+  background-image: url("../src/assets/hero_bg_three.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 5rem;
+}
+
+.hero-section-four {
+  background-image: url("../src/assets/landing_page_four_bg_two.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 5rem;
+}
+
+.contact-bg {
+  background-image: url("../src/assets/contact_bg.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+}
+
+.work-card-bg {
+
+  background-image: url("../src/assets/landing_page_card_bg_one.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  
+}
+
+.work-card-bg-two {
+  background-image: url("../src/assets/howitworks_bg.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.susbsidy-bg {
+  background-image: url("../src/assets/bg_landing_card_four.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.feature-card-bg {
+  background-image: url("../src/assets/bg_landing_card_four.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .mobile-digital-card-width h3 {
+    top: 28px;
+  }
+
+  .digital-slider-bg {
+    background-image: url("../src/assets/slider_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .digital-card-bg-one {
+    background-image: url("../src/assets/slider_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .digital-card-bg-two {
+    background-image: url("../src/assets/slider_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .digital-card-bg-three {
+    background-image: url("../src/assets/slider_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+
+  .sub-header-img {
+    display: none;
+  }
+
+  .button-text {
+    font-size: 0.8em !important;
+    padding-left: 4em;
+    transition: padding-left 0.3s ease-in-out;
+  }
+
+  .btn-swipe:hover {
+    padding-left: 1rem;
+    padding-right: 0rem;
+  }
+
+  .btn-swipe:hover .arrow {
+    margin-left: 1rem;
+    padding-right: 0rem;
+  }
+
+  .hero-section-three {
+    background-image: url("../src/assets/landing_page_three_hero_mobile.png");
+    background-size: cover;
+    background-position: center;
+    margin: 10em 2em 0em 2em;
+  }
+
+  .hero-section-two {
+    background-image: url("../src/assets/hero_section_mobile_two.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 2em;
+    margin: 10em 2em 0em 2em;
+  }
+
+
+  .hero-section-two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(182, 182, 182, 0.1);
+    /* Adjust darkness */
+    border-bottom-right-radius: 1.9rem;
+    border-bottom-left-radius: 1.9rem;
+    z-index: 1;
+  }
+
+  .hero-section-two>* {
+    position: relative;
+    z-index: 2;
+    /* Ensures content appears above the overlay */
+  }
+
+  .hero-cta-btn {
+    padding: 1em 3em 1em 3.5em;
+    width: 240px;
+    text-align: center;
+  }
+
+  .hero-cta-btn .cta-text {
+    padding: 0em;
+    text-align: center;
+  }
+
+  .hero-cta-third-btn {
+    padding: 1.2em 3em 1.2em 6em !important;
+    width: 220px !important;
+    font-size: 0.5em !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-third-btn:hover {
+    padding: 1.2em 3em 1.2em 3em !important;
+    width: 220px !important;
+    font-size: 0.5em !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-second-btn {
+    padding: 1.2em 3em 1.2em 6em !important;
+    width: 230px !important;
+    font-size: 0.5em !important;
+    text-align: center;
+    font-weight:700;
+
+  }
+
+  .hero-cta-second-btn:hover {
+    padding: 1.2em 3em 1.2em 3em !important;
+    width: 230px !important;
+    font-size: 0.5em !important;
+    text-align: center;
+    font-weight:700;
+
+  }
+
+  .hero-cta-first-btn {
+    padding: 1.2em 3em 1.2em 6em !important;
+    width: 300px !important;
+    font-size: 0.7em !important;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .hero-cta-first-btn:hover {
+    padding: 1.2em 6em 1.2em 2em !important;
+    width: 300px !important;
+    font-size: 0.7em !important;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .mobile-digital-card-title {
+    font-size: 2em;
+  }
+
+  .mobile-digital-card-width {
+    width: 290px !important;
+  }
+
+  .work-with-card {
+    width: 320px !important;
+    height: 50vh;
+    border-radius: 30px;
+
+  }
+}
+
+.btn-swipe:hover {
+  padding-right: 4rem;
+
+}
+
+.btn-swipe:hover .paddingLeft {
+  padding-left: 1em;
+}
+
+.btn-swipe .arrow-icon {
+  transition: 0.5s ease-in-out;
+}
+
+.right-swipe:hover {
+  padding-left: 1em !important;
+
+}
+
+.btn-swipe:hover .arrow-icon {
+  left: calc(100% - 60px);
+}
+
+
+
+.btn-swipe:hover .button-text {
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+/* contact */
+
+
+.button-text {
+  font-size: 1em;
+  padding-left: 4em;
+  transition: padding-left 0.3s ease-in-out;
+}
+
+.contact-btn-swipe:hover .button-text {
+  padding-left: 0;
+  padding-right: 1em;
+}
+
+
+.digital-card-bg-one:hover {
+  background-image: url("../src/assets/slider_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.digital-card-bg-two:hover {
+  background-image: url("../src/assets/slider_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.digital-card-bg-three:hover {
+  background-image: url("../src/assets/slider_bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 390px) {
+
+  .digital-card-title {
+    font-size: 2.5em;
+    margin-top: 0em;
+  }
+
+  .sub-header-img {
+    display: none;
+  }
+
+  .mobile-digital-card-width {
+    width: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .hero-cta-btn {
+    padding: 1em 2em 1em 5em;
+    width: 160px !important;
+    font-size: 0.6em !important;
+    text-align: center;
+  }
+
+  .hero-cta-btn:hover {
+    padding: 1em 1em 1em 1.3em;
+    text-align: center;
+  }
+
+  .hero-cta-third-btn {
+    padding: 1em 3em 1em 3.5em;
+    width: 150px;
+    text-align: center;
+  }
+
+  .mobile-digital-card-title {
+    font-size: 2em;
+  }
+
+  .mobile-digital-card-width {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .service-container {
+    /* Styles for iPads (Portrait) */
+    height: 160vh;
+  }
+
+  .mobile-digital-card-title {
+    font-size: 2em;
+  }
+
+  .project-slider {
+    height: 100vh;
+  }
+
+  .hero-cta-btn {
+    padding: 1em 2em 1em 4em;
+    width: 200px;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .hero-cta-btn:hover {
+    padding: 1em 1em 1em 1.3em;
+    width: 200px;
+    text-align: center;
+  }
+
+  .hero-cta-third-btn {
+    width: 170px;
+    text-align: center;
+  }
+
+  .mobile-digital-card-width {
+    width: 250px !important;
+  }
+
+  .contact-btn:hover {
+    width: 270px;
+  }
+
+  .mobile-digital-card-width h3 {
+    top: 22px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .service-container {
+    /* Styles for iPads (Portrait) */
+    height: 200vh;
+  }
+
+  .button-text {
+    font-size: 1em;
+    padding-left: 0em;
+    transition: padding-left 0.3s ease-in-out;
+  }
+
+  .hero-cta-btn {
+    padding: 1em 2em 1em 5em;
+    width: 200px;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .hero-cta-btn:hover {
+    padding: 1em 1.8em 1em 1.5em;
+    width: 200px;
+    text-align: center;
+  }
+
+  .hero-cta-third-btn {
+    padding: 1em 1.8em 1em 3.3em;
+    font-size: 0.7em;
+    width: 240px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .hero-cta-third-btn:hover {
+    padding: 1em 1.8em 1em 1.3em;
+    font-size: 0.7em;
+    width: 270px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .hero-cta-first-btn {
+    padding: 1.2em 1em 1.2em 4.9em !important;
+    width: 300px !important;
+    font-size: 12px !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-arrow-icon {
+    height: 28px;
+  }
+
+  .hero-cta-first-btn:hover {
+    padding: 1.2em 1em 1.2em 2.3em !important;
+    width: 300px !important;
+    font-size: 12px !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .digital-card-one-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(170px);
+  }
+
+  .group:hover .digital-card-one-title {
+    transform: translateY(-195px);
+    color: #fff;
+  }
+
+  .hero-cta-second-btn {
+    padding: 1.5em 3em 1.5em 8em !important;
+    width: 240px !important;
+    font-size: 0.5em !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-second-btn:hover {
+    padding: 1.5em 5em 1.5em 2em !important;
+    width: 240px !important;
+    font-size: 0.5em !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .service-container {
+    /* Styles for iPads (Portrait) */
+    height: 200vh;
+  }
+
+  .button-text {
+    font-size: 1em;
+    padding-left: 2em;
+    transition: padding-left 0.3s ease-in-out;
+  }
+
+  .hero-cta-btn {
+    padding: 1em 2em 1em 4em;
+    width: 200px;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .hero-cta-btn:hover {
+    padding: 1em 1em 1em 1.3em;
+    width: 200px;
+    text-align: center;
+  }
+
+  .hero-cta-third-btn {
+    padding: 2em 3em 2em 6em !important;
+    width: 350px !important;
+    font-size: 0.8em !important;
+    text-align: center;
+    font-size: 16px !important;
+    height: 60px;
+    font-weight: 700;
+  }
+
+  .hero-cta-third-btn:hover {
+    padding: 2em 3em 2em 3em !important;
+    width: 350px !important;
+    font-size: 16px !important;
+    height: 60px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-second-btn {
+    padding: 2em 3em 2em 8em !important;
+    width: 380px !important;
+    font-size: 0.8em !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-second-btn:hover {
+    padding: 2em 3em 2em 3em !important;
+    width: 380px !important;
+    font-size: 0.8em !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .service-container {
+    /* Styles for iPads (Portrait) */
+    height: 200vh !important;
+  }
+
+  .btn-swipe .arrow {
+    margin-right: 1rem;
+  }
+
+  .contact-btn {
+    padding-left: 3.6em !important;
+    padding-right: 1.6em !important;
+  }
+
+  .contact-btn:hover {
+    padding-left: 1.6em !important;
+    padding-right: 4.4em !important;
+  }
+
+  .digital-card-one-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    font-size: 2em;
+    transition: all 0.5s ease;
+    transform: translateY(280px);
+  }
+
+  .group:hover .digital-card-one-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+  .digital-card-two-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(280px);
+    font-size: 2em;
+  }
+
+  .group:hover .digital-card-two-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+  .digital-card-three-title {
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(250px);
+    font-size: 2em;
+  }
+
+  .group:hover .digital-card-three-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+}
+
+@media only screen and (min-width:1224px) {
+  .btn-swipe:hover .button-text {
+    padding-left: 2em;
+    padding-right: 1em;
+  }
+
+  .btn-swipe:hover .button-text {
+    padding-left: 2em;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .btn-swipe:hover .button-text {
+    padding-left: 2em;
+    padding-right: 1em;
+  }
+
+  .hero-cta-btn {
+    padding: 1em 2em 1em 5em;
+    width: 300px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .hero-cta-btn:hover {
+    padding: 1em 2em 1em 2em;
+    width: 300px;
+    text-align: center;
+  }
+
+  .hero-cta-first-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em 4em 2em 5em !important;
+    width: 380px !important;
+    height: 60px;
+    font-size: 16px !important;
+    font-weight: 700;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .hero-cta-first-btn:hover {
+    padding: 1.2em 4em 2em 1em !important;
+    width: 380px !important;
+    height: 60px;
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-second-btn {
+    padding: 2em 3em 2em 5em !important;
+    width: 420px !important;
+    font-size: 16px !important;
+     height: 60px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-second-btn:hover {
+    padding: 2em 3.9em 2em 3em !important;
+    width: 420px !important;
+    font-size: 16px !important;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .hero-cta-third-btn {
+    padding: 2em 3em 2em 4em !important;
+    width: 430px !important;
+    text-align: center;
+    font-size: 16px !important;
+    height: 60px;
+    font-weight: 700;
+  }
+
+  .hero-cta-third-btn:hover {
+    padding: 2em 3em 2em 2em !important;
+    width: 430px !important;
+    text-align: center;
+    font-size: 16px !important;
+    height: 60px;
+    font-weight: 700;
+  }
+  .digital-card-one-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(350px);
+  }
+
+  .group:hover .digital-card-one-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+  .digital-card-two-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(350px);
+  }
+
+  .group:hover .digital-card-two-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+  .digital-card-three-title {
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(300px);
+  }
+
+  .group:hover .digital-card-three-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+  .desktop-header .header-ia-black-btn{
+    display: inline-flex;
+  }
+/* Initial State */
+.desktop-header .header-logo-desktop {
+  display: block;
+}
+
+.desktop-header .header-logo-mobile {
+  display: none;
+}
+
+.desktop-header .header-ia-black-btn {
+  display: inline-flex;
+}
+
+.desktop-header .header-ia-white-btn {
+  display: none;
+}
+
+/* Hover State */
+.desktop-header:hover .header-ia-black-btn {
+  display: none;
+}
+
+.desktop-header:hover .header-ia-white-btn {
+  display: inline-flex;
+}
+
+.desktop-header:hover .header-logo-mobile {
+  display: block;
+}
+
+.desktop-header:hover .header-logo-desktop {
+  display: none;
+}
+
+/* Ensure logos are stacked and don't take extra space */
+.header-logo-container {
+  position: relative;
+}
+
+.header-logo-desktop,
+.header-logo-mobile {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+/* Ensure buttons are stacked and don't take extra space */
+.header-buttons-container {
+  position: relative;
+}
+
+.header-ia-black-btn,
+.header-ia-white-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.desktop-header {
+  transition: background-color 0.3s ease-in-out;
+}
+}
+
+.btn-swipe:hover .button-text {
+  padding-left: 2em;
+}
+
+@media only screen and (min-width:1400px) {
+  .digital-card-one-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(340px);
+  }
+
+  .group:hover .digital-card-one-title {
+    transform: translateY(5px);
+    color: #fff;
+  }
+
+  .digital-card-two-title {
+    /* Equivalent to font-semibold */
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(330px);
+    font-size: 3em;
+  }
+
+  .group:hover .digital-card-two-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+  .digital-card-three-title {
+    color: black;
+    transition: all 0.5s ease;
+    transform: translateY(280px);
+    font-size: 3em;
+  }
+
+  .group:hover .digital-card-three-title {
+    transform: translateY(-0px);
+    color: #fff;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .mobile-digital-card-width {
+    width: 230px !important;
+  }
+
+  .contact-btn {
+    width: 170px;
+    font-size: 0.7em;
+  }
+
+  .contact-btn:hover {
+    width: 190px;
+    font-size: 0.7em;
+  }
+
+  .work-with-card {
+    width: 270px !important;
+    margin-left: -3px;
+    margin-top: 2em;
+  }
+
+  .hero-cta-first-btn {
+    width: 270px !important;
+    font-size: 0.6em !important;
+  }
+
+  .hero-cta-first-btn:hover {
+    width: 270px !important;
+    font-size: 0.6em !important;
+  }
+}
+
+/* sidenav animation  */
+
+@keyframes clipCircle {
+  0% {
+    clip-path: circle(0% at 100% 0%);
+  }
+
+  100% {
+    clip-path: circle(100%);
+  }
+}
+
+@keyframes clipCircleReverse {
+  0% {
+    clip-path: circle(100%);
+  }
+
+  100% {
+    clip-path: circle(0% at 100% 0%);
+  }
+}
+
+@keyframes translateSideNav {
+  0% {
+    transform: translateX(60%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes sidenavListTranslate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes listItemtranslate {
+  0% {
+    transform: translate(195px, 44px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 0;
+  }
+}
+
+@keyframes translateYList {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sidenavElement {
+  animation: clipCircle 0.6s ease-in-out forwards;
+}
+
+.sidenavElementReverse {
+  animation: clipCircleReverse 0.6s ease-in-out forwards;
+}
+
+.sidenavTransalteAnimation {
+  transform: translateX(100%);
+  animation: translateSideNav 0.6s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.sidenavListAnimation {
+  animation: sidenavListTranslate 0.6s ease-in-out 0.4s both;
+}
+
+/* .listItems {
+  animation: listItemtranslate 0.6s ease-in-out forwards;
+} */
+
+.sidenavTransalteY {
+  animation: translateYList 0.6s ease-in-out forwards;
+}
+
+/* box animation */
+.boxAnimation {
+  transition: 1s;
+}
+
+.boxAnimation::before,
+.boxAnimation::after {
+  position: absolute;
+  background: #eee;
+  z-index: -1;
+  transition: 1s;
+  content: "";
+}
+
+.boxAnimation::before {
+  height: 50px;
+  width: 130px;
+}
+
+.boxAnimation::after {
+  width: 150px;
+  height: 30px;
+}
+
+.boxAnimation:hover::before {
+  width: 0px;
+  background: #fff;
+}
+
+.boxAnimation:hover::after {
+  height: 0px;
+  background: #fff;
+}

@@ -1,0 +1,248 @@
+.carousel {
+    margin-left: auto;
+    padding: 10px 0;
+    /* Reduce the padding to make the container smaller */
+    max-width: 100%;
+    /* Set the max-width to a smaller size */
+    height: 300px;
+    /* Set a fixed height for the carousel */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
+    /* Stack the groups vertically */
+    >* {
+      flex: 0 0 100%;
+    }
+  
+    &:hover .group {
+      animation-play-state: paused;
+    }
+  }
+  
+
+  .card {
+    position: sticky;
+    top: -230%;
+    min-height: 250px;
+    width: 80%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    height: 400px;
+    width: 600px;
+    color: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+    font-size: large;
+    position: relative;
+    min-height: 500px;
+    border: 1px solid #fff;
+  }
+  
+  .card-number {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    font-size: 96px;
+    font-weight: bold;
+  }
+  
+  .card-title {
+    font-size: 48px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 90px;
+  }
+  
+  .card-text {
+    font-size: 20px ;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 12px;
+    margin-bottom: 10px;
+  }
+  .work-with-card-three {
+    background: url("../../../assets/service_img_three.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  @keyframes scrolling {
+    0% {
+      transform: translateY(0);
+      /* Start at the top */
+    }
+  
+    100% {
+      transform: translateY(-100%);
+      /* Move upwards by the full height */
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      position: sticky;
+      top: 0;
+      min-height: 150px;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      min-height: 400px;
+      min-width: 350px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+    .card-number {
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      font-size: 46px;
+      font-weight: bold;
+    }
+    
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      position: absolute;
+      bottom: 90px;
+      text-align: left;
+    }
+    
+    .card-text {
+      font-size: 15px ;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+      position: absolute;
+      bottom: 12px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .service-container {
+      height: 250vh ;
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    .service-container {
+      height: auto;
+    }
+
+    .card {
+      position: sticky;
+      top: 0;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      height: 270px;
+      width: 300px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+    
+  }
+
+
+  
+  
+
+    
+  @media only screen and (max-width: 760px) {
+    /* .service-container {
+      height: 330vh;
+    } */
+
+    .card {
+      position: sticky;
+      top: 0;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      height: 370px;
+      width: 300px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+    
+  }
+  
+  /* @media only screen and (max-width: 1200px) {
+    .service-container {
+      height: 380vh;
+    }
+    
+  } */
+
+ 
+  
+
+
+  
+  @media only screen and (max-width: 1112px) and (min-width: 761px) {
+    .service-container {
+      height: 300vh;
+    }
+
+    .card {
+      position: sticky;
+      top: -30rem;
+      width: 80%;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      min-height: 370px;
+      min-width: 380px;
+      color: white;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 15px 0;
+      font-size: large;
+      position: relative;
+      border: 1px solid #fff;
+    }
+
+    .card-title {
+      font-size: 22px;
+      font-weight: 600;
+      position: absolute;
+      bottom: 90px;
+      text-align: left;
+    }
+    
+    .card-text {
+      font-size: 15px ;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+      position: absolute;
+      bottom: 12px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    
+  }

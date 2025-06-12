@@ -1,0 +1,24 @@
+import React from 'react'
+import Logo from '../../../assets/logoDark.png'
+import Frame from '../../../assets/frameDark.png'
+import Union from '../../../assets/iaDark.png'
+
+const Header = () => {
+  return (
+    <header className="h-[110px] sm:h-[92px] z-50 bg-black text-white border-b border-[#e6e6e6] flex flex-col justify-end sm:justify-center">
+      <div className="max-w-[2000px] w-full mx-auto px-2.5 sm:px-[40px]">
+        <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-center'>
+            <img src={Logo} alt="Logo Image" className='w-[130px] h-[53.29px] sm:h-[66px] sm:w-[161px]' />
+          </div>
+          <div className='flex items-center gap-6 sm:gap-[30px] pr-4 sm:pr-10'>
+            <img src={Union} alt="Union" className='w-[31.88px] h-[31.88px] sm:w-10 sm:h-10' />
+            <img src={Frame} alt="" className='w-[24.85px] h-[19.33px] sm:w-[31px] sm:h-[24.11px]' />
+          </div>
+        </div>
+      </div>
+    </header>
+  )
+}
+
+export default Header
